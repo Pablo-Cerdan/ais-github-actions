@@ -1,6 +1,9 @@
 name: example
 
-on: [push]
+on: 
+  push:
+  
+  workflow_dispatch:
 
 jobs:
   build:
@@ -15,7 +18,6 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 11
-
     - name: Build native with Maven
       run: mvn -B package
 
