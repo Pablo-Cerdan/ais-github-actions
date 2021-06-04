@@ -15,9 +15,9 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 11
-        
+
     - name: Build native with Maven
       run: mvn -B package
 
     - name: Comprobando
-      action: echo "Se ha hecho el workflow"
+      run: echo "Se ha hecho el workflow"
