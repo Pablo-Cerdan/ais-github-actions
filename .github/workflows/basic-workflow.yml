@@ -19,4 +19,4 @@ jobs:
       run: mvn -B package
 
     - name: Comprobando
-      run: echo "Se ha hecho el workflow"
+      action: echo "Se ha hecho el workflow"
