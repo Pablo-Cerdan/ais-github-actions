@@ -17,3 +17,6 @@ jobs:
         java-version: 11
     - name: Build native with Maven
       run: mvn -B package
+
+    - name: Comprobando
+      run: echo "Se ha hecho el workflow"
